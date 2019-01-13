@@ -1,0 +1,71 @@
+
+@font-face{
+    font-family: Aleo-Regular-Bold; 
+    src: url("../../fonts/aleo/Aleo-Regular.woff");
+    src: url("../../fonts/aleo/Aleo-Regular.ttf");
+}
+
+.Form{
+    width: 320px;
+    height: 341px;
+    background: #fff;
+    position: absolute;
+    z-index: 10;
+    display: grid;
+    align-items: center;
+}
+
+.Form__content{
+    height: 80%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Form__content p{
+    color: #832137;
+}
+
+h2{ 
+    text-align: center;
+    color: #292d2f;
+    font-family: Aleo-Regular;
+    font-size: 20px;
+}
+
+input{
+    height: 30px;
+    width: 80%;
+    margin-left: 10%;
+    border: none;
+    text-align: center;
+    border-bottom: 1px solid #292d2f;
+    color: #292d2f;
+    font-family: Aleo-Regular;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+
+
+.loginBtn{
+    height: 48px;
+    border-radius: 24px;
+    border: 2px solid #a83a5e;
+    background-color: #a83a5e;
+    color: #fff;
+    font-family: Aleo-Regular-Bold;
+    font-size: 13px;
+    border: none;
+    text-transform: uppercase;
+}
+
+
+
+@media only screen and (min-device-width : 480px) and (max-device-width : 1024px) {
+    .Form{
+        width: 366px;
+        height: 341px;
+    }
+}

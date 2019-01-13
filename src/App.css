@@ -1,32 +1,43 @@
-.App {
-  text-align: center;
+@font-face{
+  font-family: Aleo-Regular; 
+  src: url("fonts/aleo/Aleo-Regular.ttf");
+  src: url("fonts/aleo/Aleo-Regular.woff");
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.App{
+  width: 100vw;
+  height: 100vh;
+  background: url('./assets/raspberry_bg.jpg')  no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h2{
+  font-family: aleo-regular;
 }
 
-.App-link {
-  color: #61dafb;
+a{
+  cursor: pointer;
+  font-family: aleo-regular;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p{
+  font-family: aleo-regular;
+}
+
+button{
+  cursor: pointer;
+}
+
+button:hover{
+  background: rgb(255, 255, 255, 0.5)!important;
+}
+
+.loginBtn:hover{
+  background: rgb(255, 255, 255, 0.5);
+  border: 3px solid #a83a5e;
+  color: #a83a5e;
+  font-weight: 900;
 }
