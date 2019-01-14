@@ -4,7 +4,7 @@ import Form from './Form/Form';
 
 const Popup = (props) => {
     return (
-        <div className="Popup">
+        <div className={props.class}>
             <Form />
         </div>
     )

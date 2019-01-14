@@ -6,27 +6,29 @@ import logo from "../assets/logo.png";
 
 class Header extends Component {
   state = {
-    active: false
+    active: false,
+    headerNav: 'Header__Navbar'
   };
 
-  HamburgerClick = event => {
-    let navbar = document.querySelector(".Header__Navbar");
-
-    navbar.classList.remove("fadeInRight");
-    navbar.classList.remove("fadeOutLeft");
-    navbar.classList.add("fadeInRight");
-
+  HamburgerClick = () => {
+    this.setState({
+      headerNav: 'Header__Navbar fadeInRight'
+    })
     if (this.state.active === false) {
       this.setState({
         active: true
       });
-    } else {
+    } 
+    else {
       this.setState({
         active: false
       });
-      navbar.classList.add("fadeOutLeft");
-    }
+      this.setState({
+        headerNav: 'Header__Navbar fadeInRight fadeOutLeft'   
+      })
+    } 
   };
+
   render() {
 
     const navItems = [
@@ -39,7 +41,7 @@ class Header extends Component {
     return (
       <header className="Header">
         <img className="Header__logo" src={logo} alt="raspberry logo" />
-        <div className="Header__Navbar">
+        <div className={this.state.headerNav}>
           <ul>
             {navItems.map(item =>{
               return <NavItem link={item.link} name={item.name} key={item.key}/>

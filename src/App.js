@@ -8,13 +8,24 @@ import Popup from './Popup/Popup';
 
 class App extends Component {
 
+  state = {
+    class: 'Popup'
+  }
+
+  enterBtn = () => {
+    this.setState({
+      class: 'Popup fadeIn',
+    })
+  };
+
   render() {
-    return (
+
+     return (
       <div className="App">
         <Header />
-        <Main />
+        <Main enterBtn = {this.enterBtn}/>
         <Footer />
-        <Popup />
+        <Popup class={this.state.class}/>
       </div>
     );
   }
