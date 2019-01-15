@@ -4,7 +4,7 @@ import Form from './Form/Form';
 
 const Popup = (props) => {
     return (
-        <div className={props.class}>
+        <div onClick={props.close} className={props.class}>
             <Form />
         </div>
     )

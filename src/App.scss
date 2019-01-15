@@ -32,11 +32,11 @@ button{
 }
 
 button:hover{
-  background: rgb(255, 255, 255, 0.5)!important;
+  background: rgba(255,255,255,0.5)!important;
 }
 
 .loginBtn:hover{
-  background: rgb(255, 255, 255, 0.5);
+  background: rgb(255, 255, 255);
   border: 3px solid #a83a5e;
   color: #a83a5e;
   font-weight: 900;

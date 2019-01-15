@@ -2,7 +2,7 @@ import React from 'react';
 import "./Main.css";
 
 const Main = (props) => {
-
+  
     return (
       <main className="Main">
         <div className="Main__content">
@@ -16,3 +16,4 @@ const Main = (props) => {
 }
 
 export default Main;
+

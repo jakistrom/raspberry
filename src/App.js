@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './App.scss';
 import Header from './Header/Header';
 import Main from './Main/Main';
 import Footer from './Footer/Footer';
@@ -18,14 +18,19 @@ class App extends Component {
     })
   };
 
+  closePopup = (event) => {
+    
+   event.stopPropagation()
+  }
+
   render() {
 
      return (
       <div className="App">
-        <Header />
-        <Main enterBtn = {this.enterBtn}/>
+        <Header/>
+        <Main enterBtn={this.enterBtn} />
         <Footer />
-        <Popup class={this.state.class}/>
+        <Popup close={this.closePopup} class={this.state.class}/>
       </div>
     );
   }
