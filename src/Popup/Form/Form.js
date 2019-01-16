@@ -48,7 +48,7 @@ class Form extends Component {
     render() {
 
         return (
-            <div className="Form" >
+            <div className="Form">
                 <form className="Form__content" onSubmit={this.fetchAPI}>
                     <h2>Are you a Raspberry Knight?</h2>
                     <input id="login" type="text" placeholder="Email" onChange={this.loginHandler}/>

@@ -19,10 +19,14 @@ class App extends Component {
   };
 
   closePopup = (event) => {
-    
-   event.stopPropagation()
+   
+      if (event.target.classList.contains('Popup')){
+        this.setState({
+          class: ''
+        })
+    };
   }
-
+  
   render() {
 
      return (
