@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/raspberry/precache-manifest.5e3476c91342df5ed082a710fd5bcafe.js"
+  "/raspberry/precache-manifest.7ea5c629477f8a251e17c33ea2e0da81.js"
 );
 
 workbox.clientsClaim();
