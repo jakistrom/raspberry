@@ -1,16 +1,16 @@
 {
-  "main.css": "/raspberry/static/css/main.782c1816.chunk.css",
-  "main.js": "/raspberry/static/js/main.94b5f010.chunk.js",
-  "main.js.map": "/raspberry/static/js/main.94b5f010.chunk.js.map",
+  "main.css": "/raspberry/static/css/main.60a89be4.chunk.css",
+  "main.js": "/raspberry/static/js/main.78d899cd.chunk.js",
+  "main.js.map": "/raspberry/static/js/main.78d899cd.chunk.js.map",
   "static/js/1.d840b7c1.chunk.js": "/raspberry/static/js/1.d840b7c1.chunk.js",
   "static/js/1.d840b7c1.chunk.js.map": "/raspberry/static/js/1.d840b7c1.chunk.js.map",
   "runtime~main.js": "/raspberry/static/js/runtime~main.d0272cec.js",
   "runtime~main.js.map": "/raspberry/static/js/runtime~main.d0272cec.js.map",
   "static/media/App.scss": "/raspberry/static/media/raspberry_bg.54b463a1.jpg",
-  "static/media/Form.css": "/raspberry/static/media/Aleo-Regular.6ef7844e.woff",
+  "static/media/Form.css": "/raspberry/static/media/Aleo-Regular.d16b5eb2.ttf",
   "static/media/Main.css": "/raspberry/static/media/bakery.39dd978b.ttf",
-  "static/css/main.782c1816.chunk.css.map": "/raspberry/static/css/main.782c1816.chunk.css.map",
+  "static/css/main.60a89be4.chunk.css.map": "/raspberry/static/css/main.60a89be4.chunk.css.map",
   "index.html": "/raspberry/index.html",
-  "precache-manifest.11135dd5005d5f2adc4444d65e02820b.js": "/raspberry/precache-manifest.11135dd5005d5f2adc4444d65e02820b.js",
+  "precache-manifest.5e3476c91342df5ed082a710fd5bcafe.js": "/raspberry/precache-manifest.5e3476c91342df5ed082a710fd5bcafe.js",
   "service-worker.js": "/raspberry/service-worker.js"
 }
