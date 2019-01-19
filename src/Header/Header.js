@@ -3,30 +3,30 @@ import "./Header.css";
 import NavItem from "./NavItem/NavItem";
 import { Spin } from "react-burgers";
 import logo from "../assets/logo.png";
+import { timingSafeEqual } from "crypto";
 
 class Header extends Component {
   state = {
-    active: false,
-    headerNav: 'Header__Navbar'
+      active: false,
+      headerNav: 'Header__Navbar'
   };
 
   HamburgerClick = () => {
-    this.setState({
-      headerNav: 'Header__Navbar fadeInRight'
-    })
-    if (this.state.active === false) {
+
+      const doesShow = this.state.active;
       this.setState({
-        active: true
-      });
-    } 
-    else {
-      this.setState({
-        active: false
-      });
-      this.setState({
-        headerNav: 'Header__Navbar fadeInRight fadeOutLeft'   
+          active: !doesShow
       })
-    } 
+
+      this.setState({
+          headerNav: 'Header__Navbar fadeInRight'
+      })
+
+      if (this.state.active === false) {
+          this.setState({
+              headerNav: 'Header__Navbar fadeInRight fadeOutLeft'
+          })
+      }
   };
 
   render() {

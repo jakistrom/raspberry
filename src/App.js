@@ -22,7 +22,7 @@ class App extends Component {
    
       if (event.target.classList.contains('Popup')){
         this.setState({
-          class: ''
+          class: 'Popup'
         })
     };
   }
