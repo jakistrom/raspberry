@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './App.scss';
 import Header from './Header/Header';
 import Main from './Main/Main';
 import Footer from './Footer/Footer';
@@ -8,13 +8,33 @@ import Popup from './Popup/Popup';
 
 class App extends Component {
 
+  state = {
+    class: 'Popup'
+  }
+
+  enterBtn = () => {
+    this.setState({
+      class: 'Popup fadeIn',
+    })
+  };
+
+  closePopup = (event) => {
+   
+      if (event.target.classList.contains('Popup')){
+        this.setState({
+          class: ''
+        })
+    };
+  }
+  
   render() {
-    return (
+
+     return (
       <div className="App">
-        <Header />
-        <Main />
+        <Header/>
+        <Main enterBtn={this.enterBtn} />
         <Footer />
-        <Popup />
+        <Popup close={this.closePopup} class={this.state.class}/>
       </div>
     );
   }

@@ -43,21 +43,25 @@ h1{
 }
 
 .fadeIn {
+    
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
+    display: flex!important;
     }
     @-webkit-keyframes fadeIn {
     0% {opacity: 0;}
-    100% {opacity: 1;}
+    100% {opacity: 1}
     }
     @keyframes fadeIn {
     0% {opacity: 0;}
-    100% {opacity: 1;}
-    } 
+    100% {opacity: 1}
+    }
+
+
 
     @media only screen and (min-device-width : 480px) and (max-device-width : 768px) {
         .Main__content{

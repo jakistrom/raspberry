@@ -4,7 +4,8 @@ import './Form.css';
 class Form extends Component {
     state = {
         login: '',
-        password: ''
+        password: '',
+        info: ''
       };
        
     loginHandler = (event) => {
@@ -36,7 +37,9 @@ class Form extends Component {
                 window.location.href = "https://www.jmr.pl/pl/";
             }
             else{
-                this.error(data)
+                this.setState({
+                    info: data.message
+                })
             }
         })
 
@@ -45,12 +48,12 @@ class Form extends Component {
     render() {
 
         return (
-            <div className="Form" >
+            <div className="Form">
                 <form className="Form__content" onSubmit={this.fetchAPI}>
                     <h2>Are you a Raspberry Knight?</h2>
                     <input id="login" type="text" placeholder="Email" onChange={this.loginHandler}/>
                     <input id="password" type="password" placeholder="Password" onChange={this.passwordHandler}/>
-                    <p>{this.state.plum}</p>
+                    <p>{this.state.info}</p>
                     <button type="submit" className="loginBtn">log in</button>
                 </form>
             </div>
