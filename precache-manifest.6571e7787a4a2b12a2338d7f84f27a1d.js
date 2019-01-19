@@ -4,12 +4,12 @@ self.__precacheManifest = [
     "url": "/raspberry/static/media/Aleo-Regular.d16b5eb2.ttf"
   },
   {
-    "revision": "dd45daca19b5dbac9aef",
-    "url": "/raspberry/static/css/main.8bcc190f.chunk.css"
+    "revision": "0142976583530a400ee4",
+    "url": "/raspberry/static/css/main.1f52e352.chunk.css"
   },
   {
-    "revision": "d840b7c1a74c50042822",
-    "url": "/raspberry/static/js/1.d840b7c1.chunk.js"
+    "revision": "b6db51fbbc560cf5421a",
+    "url": "/raspberry/static/js/1.b6db51fb.chunk.js"
   },
   {
     "revision": "d0272cec7d841f062cd6",
@@ -24,8 +24,8 @@ self.__precacheManifest = [
     "url": "/raspberry/static/media/Aleo-Regular.6ef7844e.woff"
   },
   {
-    "revision": "dd45daca19b5dbac9aef",
-    "url": "/raspberry/static/js/main.dd45daca.chunk.js"
+    "revision": "0142976583530a400ee4",
+    "url": "/raspberry/static/js/main.01429765.chunk.js"
   },
   {
     "revision": "cc54c60a16074fc1b209fc8900ec1575",
@@ -44,7 +44,7 @@ self.__precacheManifest = [
     "url": "/raspberry/static/media/bakery.39dd978b.ttf"
   },
   {
-    "revision": "3231479fbd9ee777b8284e44c872a101",
+    "revision": "ea6380c8b8c53888964d297b1ba4c1bd",
     "url": "/raspberry/index.html"
   }
 ];
